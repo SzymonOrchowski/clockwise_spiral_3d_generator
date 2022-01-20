@@ -7,6 +7,12 @@ body {
 
 h3 {
     font-size: 0.8em;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+a {
+    color:rgba(200, 0, 200, 1)
 }
 
 #sliderForm {
@@ -71,8 +77,8 @@ h3 {
     font-weight: 800;
     text-align: center;
     margin-right: 5px;
-    margin-top: 10px;
-    margin-bottom: 15px;
+    margin-top: 30px;
+    margin-bottom: 25px;
 }
 
 #header {
@@ -83,4 +89,19 @@ h3 {
     margin-top: 20px;
     text-align: center;
     margin-bottom: 100px;
+}
+
+#github {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+#github img {
+    margin-left: 20px;
+    opacity: 0.4;
+}
+
+#github img:hover {
+    opacity: 0.9;
 }
