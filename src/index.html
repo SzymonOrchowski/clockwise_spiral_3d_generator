@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D spiral generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="description">
+        <div>
+            <div id="header">
+                <h1>The Clockwise Spiral generator</h1>
+                <h3>A project made by Szymon Orchowski, inspired by a kata by alex.budiakov.</h3>
+                <p>This simple project comes up as a side result of my everyday coding practice. During solving one of Codewars's kata titled: "The Clockwise Spiral" I decided to code a visual presentation of a final algorithm.</p>
+                <h3>Here is an original kata description:</h3>
+                <p>
+                    <i>
+                        Your objective is to complete a function createSpiral(N) that receives an integer N and returns an NxN two-dimensional array with numbers 1 through NxN represented as a clockwise spiral.
+                    </i>
+                </p>
+            </div>
+            <div id="examples-title">Examples:</div>
+            <div id="examples">
+                <div class="example1">
+                    <div class="row">
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                    </div>
+                    <div class="row">
+                        <div>8</div>
+                        <div>9</div>
+                        <div>4</div>
+                    </div>
+                    <div class="row">
+                        <div>7</div>
+                        <div>6</div>
+                        <div>5</div>
+                    </div>
+                </div>
+                <div class="example">
+                    <div class="row">
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                        <div>4</div>
+                    </div>
+                    <div class="row">
+                        <div>12</div>
+                        <div>13</div>
+                        <div>14</div>
+                        <div>5</div>
+                    </div>
+                    <div class="row">
+                        <div>11</div>
+                        <div>16</div>
+                        <div>15</div>
+                        <div>6</div>
+                    </div>
+                    <div class="row">
+                        <div>10</div>
+                        <div>9</div>
+                        <div>8</div>
+                        <div>7</div>
+                    </div>
+                </div>
+            </div>
+            <div id="footer">
+                <b>
+                    Instructions:
+                </b>
+                <br/>
+                <br/>
+                    Just choose a value of N on a slider on the top-right (number of objects per side) and click generate!
+                <br/>
+                <br/>
+                    You can check results from a different perspective. Use the left mouse button to rotate and scroll to zoom in / zoom out.
+                <br/>
+                <br/>
+                <br/>
+                <b>
+                    Have fun!
+                </b>
+            </div>
+        </div>
+    </div>
+    <form id="sliderForm">
+        <input id="slider" type="range" min="1" max="100" step="1" value="1"/><br/>
+        <output id="output">1</output><br/>
+        <input id="submit-button" type="submit" value="Generate!"/>
+    </form>
+    <canvas class="webgl"></canvas>
+</body>
+</html>
